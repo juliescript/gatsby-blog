@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale, turqouise, pink } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -16,13 +16,15 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: `Merriweather, Georgia, serif`,
+            color: turqouise
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: turqouise
             }}
             to={`/`}
           >
@@ -34,15 +36,15 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            color: turqouise,
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: turqouise
             }}
             to={`/`}
           >
@@ -65,7 +67,7 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a style={{ color: pink }} href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     )

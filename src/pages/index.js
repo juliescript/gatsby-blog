@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, turqouise, pink } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -24,9 +24,10 @@ class BlogIndex extends React.Component {
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
+                    color: turqouise
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link style={{ boxShadow: `none`, color: turqouise }} to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
