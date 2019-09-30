@@ -3,7 +3,7 @@ module.exports = {
     title: `Juliescript`,
     author: `Julieta Campos`,
     description: `Personal blog by Julieta Campos, a Mexican Software Engineer based in Berlin.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://juliescript.dev/`,
     social: {
       twitter: `juliescript`,
       instagram: `juliescript`
@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `JulieScript`,
+        short_name: `JulieScript`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
