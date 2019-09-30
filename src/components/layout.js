@@ -68,6 +68,8 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a style={{ color: pink }} href="https://www.gatsbyjs.org">Gatsby</a>
+          <br />
+          <a href="https://juliescript.dev/rss.xml">RSS Feed</a>
         </footer>
       </div>
     )
