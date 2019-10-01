@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, turqouise } from "../utils/typography"
+import 'prism-theme-night-owl'
+import '../style/prism-overrides.css';
 
 class BlogIndex extends React.Component {
   render() {
