@@ -4,9 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, turqouise } from "../utils/typography"
-import 'prism-theme-night-owl'
-import '../style/prism-overrides.css';
 
 class BlogIndex extends React.Component {
   render() {
@@ -24,12 +21,8 @@ class BlogIndex extends React.Component {
             <article key={node.fields.slug}>
               <header>
                 <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                    color: turqouise
-                  }}
                 >
-                  <Link style={{ boxShadow: `none`, color: turqouise }} to={node.fields.slug}>
+                  <Link to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
