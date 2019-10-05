@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: `https://juliescript.dev/`,
     social: {
       twitter: `juliescript`,
-      instagram: `juliescript`
+      instagram: `juliescript`,
+      github: `juliescript`
     },
   },
   plugins: [
@@ -73,16 +74,11 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    `gatsby-plugin-sass`
   ],
 }

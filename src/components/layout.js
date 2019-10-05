@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import ('../style/juliescript.scss');
 
-import { rhythm, scale, turqouise, pink } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -12,21 +12,10 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-            fontFamily: `Merriweather, Georgia, serif`,
-            color: turqouise
-          }}
         >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: turqouise
-            }}
             to={`/`}
+            style={{ color: `#cd6a9d`}}
           >
             {title}
           </Link>
@@ -35,18 +24,10 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3
-          style={{
-            marginTop: 0,
-            color: turqouise,
-          }}
         >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: turqouise
-            }}
             to={`/`}
+            style={{ color: `#cd6a9d`}}
           >
             {title}
           </Link>
@@ -55,21 +36,16 @@ class Layout extends React.Component {
     }
     return (
       <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
       >
         <header>{header}</header>
         <main>{children}</main>
+        <hr />
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <p>© {new Date().getFullYear()}, Built with
           {` `}
-          <a style={{ color: pink }} href="https://www.gatsbyjs.org">Gatsby</a>
-          <br />
-          <a href="https://juliescript.dev/rss.xml">RSS Feed</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a></p>
+
+          <p><a href="https://juliescript.dev/rss.xml">RSS Feed</a></p>
         </footer>
       </div>
     )

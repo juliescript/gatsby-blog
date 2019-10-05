@@ -1,3 +1,2 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+import 'prism-theme-night-owl'
+import './src/style/prism-overrides.css'
