@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: `https://juliescript.dev/`,
     social: {
       twitter: `juliescript`,
-      instagram: `juliescript`
+      instagram: `juliescript`,
+      github: `juliescript`
     },
   },
   plugins: [

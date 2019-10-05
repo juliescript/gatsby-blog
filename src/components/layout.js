@@ -39,12 +39,13 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <hr />
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <p>© {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <br />
-          <a href="https://juliescript.dev/rss.xml">RSS Feed</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a></p>
+
+          <p><a href="https://juliescript.dev/rss.xml">RSS Feed</a></p>
         </footer>
       </div>
     )
