@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Juliescript`,
     author: `Julieta Campos`,
-    description: `Personal blog by Julieta Campos, a Mexican Software Engineer based in Berlin.`,
+    description: `Blog personal de Julieta Campos, una ingeniero de software mexicana que vive en Berlín.`,
     siteUrl: `https://juliescript.dev/`,
     social: {
       twitter: `juliescript`,
