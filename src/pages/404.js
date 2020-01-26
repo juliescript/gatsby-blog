@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./pages.scss"
 
 class NotFoundPage extends React.Component {
   render() {
@@ -12,8 +13,14 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <section class="blog-post">
+          <header>
+            <h1>404 no encontramos lo que buscabas</h1>
+          </header>
+          <main>
+            <p>Intenta regresar a la página principal</p>
+          </main>
+        </section>
       </Layout>
     )
   }

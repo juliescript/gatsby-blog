@@ -29,9 +29,11 @@ class Layout extends React.Component {
     }
     return (
       <div className="main-container">
-        <Menu></Menu>
-        <header className="main-header">{header}</header>
-        <main>{children}</main>
+        <div>
+          <Menu></Menu>
+          <header className="main-header">{header}</header>
+          <main>{children}</main>
+        </div>
         <footer className="footer">
           <Bio></Bio>
           <div className="footer__information">
