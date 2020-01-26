@@ -17,9 +17,9 @@ class NotFoundPage extends React.Component {
           <header>
             <h1>404 no encontramos lo que buscabas</h1>
           </header>
-          <main>
+          <article>
             <p>Intenta regresar a la página principal</p>
-          </main>
+          </article>
         </section>
       </Layout>
     )
