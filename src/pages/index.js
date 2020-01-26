@@ -5,7 +5,10 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./index.scss"
+
 class BlogIndex extends React.Component {
+  
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -14,19 +17,18 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
               <header>
+                <small>{node.frontmatter.date}</small>
                 <h3
                 >
                   <Link to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
               </header>
               <section>
                 <p
