@@ -38,13 +38,23 @@ class Layout extends React.Component {
             <p>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a target="_blank" href="https://www.gatsbyjs.org">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.gatsbyjs.org"
+              >
                 Gatsby
               </a>
             </p>
 
             <p>
-              <a href="https://juliescript.dev/rss.xml">RSS Feed</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://juliescript.dev/rss.xml"
+              >
+                RSS Feed
+              </a>
             </p>
             <p>
               Icons made by{" "}
@@ -52,12 +62,14 @@ class Layout extends React.Component {
                 href="https://www.flaticon.com/authors/pixel-perfect"
                 title="Pixel perfect"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Pixel perfect
               </a>{" "}
               from{" "}
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.flaticon.com/"
                 title="Flaticon"
               >
