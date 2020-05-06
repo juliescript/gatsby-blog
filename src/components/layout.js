@@ -4,6 +4,7 @@ import "../style/juliescript.scss"
 import "./layout.scss"
 import Menu from "./menu"
 import Bio from "./bio"
+import InstaWidget from "./instaWidget"
 
 class Layout extends React.Component {
   render() {
@@ -36,6 +37,7 @@ class Layout extends React.Component {
         </div>
         <footer className="footer">
           <Bio></Bio>
+          <InstaWidget></InstaWidget>
           <div className="footer__information">
             <p>
               © {new Date().getFullYear()}, Built with
