@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import "./index.scss"
 
 class BlogIndex extends React.Component {
-  
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -22,11 +21,8 @@ class BlogIndex extends React.Component {
             <article key={node.fields.slug}>
               <header>
                 <small>{node.frontmatter.date}</small>
-                <h3
-                >
-                  <Link to={node.fields.slug}>
-                    {title}
-                  </Link>
+                <h3>
+                  <Link to={node.fields.slug}>{title}</Link>
                 </h3>
               </header>
               <section>

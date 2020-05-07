@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: `juliescript`,
       instagram: `juliescript`,
-      github: `juliescript`
+      github: `juliescript`,
     },
   },
   plugins: [
@@ -79,6 +79,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 }
