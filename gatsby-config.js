@@ -80,5 +80,11 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ["INSTAGRAM_TOKEN"]
+      },
+    },
   ],
 }
